@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
+    <link rel="stylesheet" href="./output.css"> 
 </head>
-<body>
-    <div>
-        <input id="city-input" type="text" placeholder="Enter City Name">
-        <button id="search-button">Search</button>
-    </div>
+<body id="app-body" class="bg-gradient-to-br from-sky-300 to-blue-500 min-h-screen flex items-center justify-center transition-all duration-500">
+<div class="flex flex-col items-center">
+    <div class="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-xl w-[350px] text-black mx-auto">
 
-    <div>
-        <h3 id="city-name">Canada, Ontario - Toronto</h3>
-        <h6 id="city-time">localtime</h6>
-        <p id="city-temp">13</p>
-        <h5 id="city-humidity">Humidity</h5>
+        <!-- Title -->
+         <h1 class="text-3xl font-bold text-center mb-6">Weather App </h1>
+         <!-- Input Section -->
+          <div class="flex gap-2 mb-6"><input id="city-input" type="text" placeholder="Enter City Name" class="flex-1 px-4 py-2 rounded-lg text-black outline-none bg-white/80 focus:ring-2 focus:ring-blue-400 transition"><button id="search-button" class="text-center bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-semibold transition shadow-lg hover:shadow-blue-300">Search</button></div> 
+         
+            <!-- Weather Info --> 
+        <div class="space-y-3 text-lg"> <h3 class="font-semibold">📍 Place: <span id="city-name"></span></h3> 
+        <h3 class="font-semibold">⏰ Local Time: <span id="city-time"></span></h3>
+        <h3 class="font-semibold">🌡️ Temperature (deg Celsius): <span id="city-temp"></span></h3>
+        <h3 class="font-semibold">💧 Humidity: <span id="city-humidity"></span></h3></div>
     </div>
-
+        <p id="weather-message" class="mt-6 text-center font-semibold text-9xl w-[350px]"></p>
+</div> 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
