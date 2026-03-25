@@ -13,10 +13,13 @@
         <!-- Title -->
          <h1 class="text-3xl font-bold text-center mb-6">Weather App </h1>
          <!-- Input Section -->
-          <div class="flex gap-2 mb-6"><input id="city-input" type="text" placeholder="Enter City Name" class="flex-1 px-4 py-2 rounded-lg text-black outline-none bg-white/80 focus:ring-2 focus:ring-blue-400 transition"><button id="search-button" class="text-center bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-semibold transition shadow-lg hover:shadow-blue-300">Search</button></div> 
+          <div class="flex gap-2 mb-6"><input id="city-input" type="text" placeholder="Enter City Name" class="flex-1 px-4 py-2 rounded-lg text-black outline-none bg-white/80 focus:ring-2 focus:ring-blue-400 transition"><button id="search-button" class="text-center bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-semibold transition shadow-lg hover:shadow-blue-300">Search</button></div>
+         
+          <div class="flex gap-2 mb-6"><h3 class="font-bold">📍Get my location: <span id="get-location"></span></h3><button id="location" class="text-center bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-semibold transition shadow-lg hover:shadow-blue-300">Search</button></div> 
          
             <!-- Weather Info --> 
-        <div class="space-y-3 text-lg"> <h3 class="font-semibold">📍 Place: <span id="city-name"></span></h3> 
+        
+        <div class="space-y-3 text-lg"><h3 class="font-semibold">📍 Place: <span id="city-name"></span></h3> 
         <h3 class="font-semibold">⏰ Local Time: <span id="city-time"></span></h3>
         <h3 class="font-semibold">🌡️ Temperature (deg Celsius): <span id="city-temp"></span></h3>
         <h3 class="font-semibold">🌤️ Condition: <span id="city-condition"></span></h3>
